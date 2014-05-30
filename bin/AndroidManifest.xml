@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="main.activity.SqliteActivity"></activity>
+        <activity android:name="main.activity.AsyncTaskActivity"></activity>
     </application>
 
 </manifest>

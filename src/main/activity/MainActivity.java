@@ -38,11 +38,18 @@ public class MainActivity extends Activity {
 	                    this, "second", SecondFragment.class));
 	    actionBar.addTab(tab);
 	    
-	    findViewById(R.id.sqlite).setOnClickListener(new OnClickListener() {
-			
+	    findViewById(R.id.sqlite).setOnClickListener(new OnClickListener() {			
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(MainActivity.this, SqliteActivity.class);
+				startActivity(intent);
+			}
+		});
+	    
+	    findViewById(R.id.asynctask).setOnClickListener(new OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, AsyncTaskActivity.class);
 				startActivity(intent);
 			}
 		});
