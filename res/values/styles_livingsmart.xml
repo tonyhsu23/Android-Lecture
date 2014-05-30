@@ -29,7 +29,7 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_livingsmart</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_livingsmart</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Livingsmart</item>
-        
+        <item name="android:windowAnimationStyle">@null</item>
         
     </style>
 

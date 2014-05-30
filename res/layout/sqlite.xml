@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/name_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Name"
+        android:ems="8" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/email_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name_create"
+        android:ems="8"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+    
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="10dp"
+		android:background="#DDDDDD"
+        android:layout_below="@+id/email_create" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/email_create"
+        android:layout_toRightOf="@+id/name_create"
+        android:text="create" />
+
+    <EditText
+        android:id="@+id/name_update_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_create"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="10dp"
+        android:hint="query name"
+        android:ems="8" />
+    
+    <EditText
+        android:id="@+id/name_update_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_update_prev"
+        android:layout_below="@+id/name_update_prev"
+        android:hint="update name"
+        android:ems="8" />
+    
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="10dp"
+		android:background="#DDDDDD"
+        android:layout_below="@+id/name_update_new" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_update_new"
+        android:layout_toRightOf="@+id/name_update_new"
+        android:text="update" />
+
+    <EditText
+        android:id="@+id/name_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_update_new"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="15dp"
+        android:hint="name"
+        android:ems="8" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_delete"
+        android:layout_toRightOf="@+id/name_delete"
+        android:text="delete" />
+
+    <ListView
+        android:id="@+id/names"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_delete"
+        android:layout_below="@+id/name_delete"
+        android:layout_marginTop="15dp" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/emails"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_delete"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/names" >
+    </ListView>
+
+    <Button
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Back" />
+
+</RelativeLayout>
