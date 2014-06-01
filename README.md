@@ -17,10 +17,10 @@ to view different Fragment.
 Here we use 2 tabs called '1st' and '2nd' respectively.
 
 Fragment used the following files:
-1. src/main/activity/MainActivity.java
-2. src/main/activity/FirstFragment.java
-3. src/main/activity/SecondFragment.java
-4. res/layout/one.xml
+1. src/main/activity/MainActivity.java  
+2. src/main/activity/FirstFragment.java  
+3. src/main/activity/SecondFragment.java  
+4. res/layout/one.xml  
 5. res/layout/two.xml
 
 You can find TabListener(used for Tab in ActionBar) [here](https://gist.github.com/tonyhsu23/26cdd71a6a0f08cab3b1).
@@ -37,8 +37,8 @@ Then input another 'name' which you want to update with.
 
 
 SQLite used the following files:
-1. src/main/activity/SqliteActivity.java
-2. src/main/activity/DBHelper.java
+1. src/main/activity/SqliteActivity.java  
+2. src/main/activity/DBHelper.java  
 3. res/layout/sqlite.xml
 
 See document [here](http://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html).
@@ -50,7 +50,7 @@ Each will write some text in Log and Toast (except for doInBackground method).
 When the method is done and success without exception, TextView will appear with the text '(method name) finished.'.
 
 AsyncTask used the following files:
-1. src/main/activity/AsyncTaskActivity.java
+1. src/main/activity/AsyncTaskActivity.java  
 2. res/layout/asynctask.xml
 
 See document [here](http://developer.android.com/reference/android/os/AsyncTask.html)
