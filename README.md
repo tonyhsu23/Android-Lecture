@@ -16,7 +16,7 @@ in [ActionBar](http://developer.android.com/guide/topics/ui/actionbar.html)
 to view different Fragment.  
 Here we use 2 tabs called '1st' and '2nd' respectively.
 
-Fragment used the following files:
+Fragment used the following files:  
 1. src/main/activity/MainActivity.java  
 2. src/main/activity/FirstFragment.java  
 3. src/main/activity/SecondFragment.java  
@@ -36,7 +36,7 @@ Then input another 'name' which you want to update with.
 - It will RETRIEVE all data and display below.
 
 
-SQLite used the following files:
+SQLite used the following files:  
 1. src/main/activity/SqliteActivity.java  
 2. src/main/activity/DBHelper.java  
 3. res/layout/sqlite.xml
@@ -49,7 +49,7 @@ Running through 4 methods used in AsyncTask.
 Each will write some text in Log and Toast (except for doInBackground method).  
 When the method is done and success without exception, TextView will appear with the text '(method name) finished.'.
 
-AsyncTask used the following files:
+AsyncTask used the following files:  
 1. src/main/activity/AsyncTaskActivity.java  
 2. res/layout/asynctask.xml
 
